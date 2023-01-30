@@ -1,0 +1,294 @@
+.scene-bgcolor {
+    -fx-background-color: bg;
+}
+
+.popup {
+    -fx-background-color: bg;
+    -fx-background-radius: 16px;
+    -fx-padding: 8px;
+}
+
+.label-inactive {
+    -fx-text-fill: #808A9F;
+}
+
+.label-error {
+    -fx-text-fill: #EE6055;
+}
+
+.label-ok {
+    -fx-text-fill: #70AE6E;
+}
+
+ADLabel {
+    -fx-text-fill: content-color;
+}
+
+ADTextField {
+    -fx-text-fill: content-color;
+}
+
+HBox, VBox, TilePane, GridPane {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-hgap: 20px;
+    -fx-vgap: 20px;
+}
+
+ADTextField {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: bg-accent;
+    -fx-border-width: 2px;
+    -fx-background-color: bg;
+    -fx-effect: innershadow(gaussian, shadow, 16, 0.5, 0, 0);
+    -fx-padding: 16px;
+}
+
+ADTextField:hover {
+    -fx-background-color: hover;
+}
+
+ADTextField:focused {
+    -fx-border-color: #808A9F;
+}
+
+Node:disabled {
+    -fx-opacity: 1;
+}
+
+.btn-large {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-insets: -1px;
+    -fx-text-fill: content-color;
+    -fx-border-color: bg-accent;
+    -fx-border-width: 2px;
+    -fx-background-color: bg;
+    -fx-padding: 16px;
+    -fx-effect: dropshadow(gaussian, shadow, 16, 0.5, 4, 4);
+}
+
+.btn-large:hover {
+    -fx-background-color: hover;
+}
+
+.ad-button-pressed .btn-large {
+    -fx-opacity: 0.75;
+    -fx-text-fill: content-color;
+    -fx-effect: innershadow(gaussian, shadow1, 16, 0.5, 1, 1);
+}
+
+.ad-button-pressed .ad-button-light-shadow {
+    -fx-opacity: 1;
+    -fx-effect: innershadow(gaussian, light1, 16, 0.5, -4, -4);
+}
+
+.ad-button-pressed .ad-button-light-shadow.btn-blue {
+    -fx-opacity: 1;
+    -fx-effect: innershadow(gaussian, #78b2e2, 16, 0.5, -6, -6);
+}
+
+.ad-button-pressed .btn-blue {
+    -fx-text-fill: content-color2;
+    -fx-effect: innershadow(gaussian, #306f9e, 16, 0.5, 4, 4);
+    -fx-background-color: linear-gradient(to top, #5c96c8, #3F7CAC);
+}
+
+.btn-large:disabled {
+    -fx-background-color: btn-inactive;
+    -fx-border-color: bg-accent;
+    -fx-text-fill: #B0B7C3;
+    -fx-effect: innershadow(gaussian, shadow, 0, 0, 0, 0);
+}
+
+.ad-button-light-shadow:disabled, .ad-button-light-shadow.btn-blue:disabled {
+    -fx-effect: innershadow(gaussian, shadow, 0, 0, 0, 0);
+}
+
+.btn-blue {
+    -fx-text-fill: content-color2;
+    -fx-background-color: linear-gradient(to top, #3F7CAC, #5c96c8);
+    -fx-border-color: #3F7CAC;
+    -fx-effect: dropshadow(gaussian, light, 16, 0.5, -4, -4);
+}
+
+.btn-blue:hover {
+    -fx-text-fill: content-color2;
+    -fx-background-color: linear-gradient(to top, #4884b4, #659ed0);
+}
+
+.ad-button-light-shadow {
+    -fx-effect: dropshadow(gaussian, light, 16, 0.5, -4, -4);
+}
+
+.ad-button-light-shadow.btn-blue {
+    -fx-effect: dropshadow(gaussian, shadow, 16, 0.5, 4, 4);
+}
+
+.btn-circle {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-max-width: 48px;
+    -fx-max-height: 48px;
+    -fx-min-width: 48px;
+    -fx-min-height: 48px;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2;
+}
+
+.chart-line-symbol {
+}
+
+.tooltip {
+    -fx-background-color: content-color;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+    -fx-border-width: 2px;
+    -fx-border-color: #3A3C42;
+    -fx-border-radius: 8px;
+}
+
+.tooltip-value {
+    -fx-text-fill: content-color2;
+}
+
+.tooltip-date {
+    -fx-text-fill: bg-accent;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #3F7CAC; }
+.default-color1.chart-series-line { -fx-stroke: #EE6055; }
+.default-color2.chart-series-line { -fx-stroke: #70AE6E; }
+.default-color3.chart-series-line { -fx-stroke: #FFBA08; }
+.default-color4.chart-series-line { -fx-stroke: #B356B3; }
+.default-color5.chart-series-line { -fx-stroke: #5E4B56; }
+.default-color6.chart-series-line { -fx-stroke: #BCC1BA; }
+.default-color7.chart-series-line { -fx-stroke: #E4C1F9; }
+.default-color8.chart-series-line { -fx-stroke: #82B12F; }
+.default-color9.chart-series-line { -fx-stroke: #80DED9; }
+.default-color10.chart-series-line { -fx-stroke: #4CB944; }
+
+.default-color0.chart-line-symbol { -fx-background-color: #3F7CAC; }
+.default-color1.chart-line-symbol { -fx-background-color: #EE6055; }
+.default-color2.chart-line-symbol { -fx-background-color: #70AE6E; }
+.default-color3.chart-line-symbol { -fx-background-color: #FFBA08; }
+.default-color4.chart-line-symbol { -fx-background-color: #B356B3; }
+.default-color5.chart-line-symbol { -fx-background-color: #5E4B56; }
+.default-color6.chart-line-symbol { -fx-background-color: #BCC1BA; }
+.default-color7.chart-line-symbol { -fx-background-color: #E4C1F9; }
+.default-color8.chart-line-symbol { -fx-background-color: #82B12F; }
+.default-color9.chart-line-symbol { -fx-background-color: #80DED9; }
+.default-color10.chart-line-symbol { -fx-background-color: #4CB944; }
+
+ADComboBox {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-insets: -1px;
+    -fx-text-fill: content-color;
+    -fx-border-color: bg-accent;
+    -fx-border-width: 2px;
+    -fx-background-color: bg;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, shadow, 16, 0.5, 4, 4);
+}
+
+ADComboBox:hover, ADComboBox:showing {
+    -fx-background-color: hover;
+}
+
+ADComboBox:pressed, ADComboBox:showing {
+    -fx-effect: innershadow(gaussian, shadow1, 16, 0.5, 1, 1);
+}
+
+CheckBox .box {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-insets: -1px;
+    -fx-border-color: bg-accent;
+    -fx-border-width: 2px;
+    -fx-background-color: bg;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, shadow, 16, 0.5, 4, 4);
+}
+
+CheckBox .box:hover {
+    -fx-background-color: hover;
+}
+
+CheckBox .box:pressed {
+    -fx-effect: innershadow(gaussian, shadow1, 16, 0.5, 1, 1);
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: content-color;
+}
+
+.combo-box-popup {
+    -fx-border-width: 2px;
+    -fx-border-color: bg-accent;
+    -fx-border-radius: 8px;
+    -fx-effect: innershadow(gaussian, shadow, 0, 0, 0, 0);
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: hover;
+    -fx-text-fill: content-color;
+}
+
+.combo-box-popup .list-cell:hover, .combo-box-popup .list-cell:pressed {
+    -fx-background-color: bg-accent;
+}
+
+.graph-container {
+    -fx-background-color: bg;
+    -fx-background-radius: 8px;
+    -fx-border-color: bg-accent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px;
+}
+
+.chart-plot-background {
+    -fx-background-color: bg;
+}
+
+.axis, .chart-title {
+    -fx-text-fill: bg-accent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: bg-accent;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: bg-accent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: content-color;
+}
+
+.chart-legend {
+    -fx-background-color: bg;
+    -fx-background-radius: 8px;
+    -fx-border-color: bg-accent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-border-insets: -1px;
+    -fx-effect: dropshadow(gaussian, shadow, 16, 0.5, 4, 4);
+    -fx-padding: 8px;
+}
+
+.btn-new-graph {
+    -fx-effect: innershadow(gaussian, shadow, 0, 0, 0, 0);
+}
+
+.screenshot {
+    -fx-border-color: bg-accent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px;
+}
